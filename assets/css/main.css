@@ -100,8 +100,8 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
-		font-weight: 300;
+		color: #000000;
+		font-weight: 500;
 		font-size: 13pt;
 	}
 
@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #ffffff;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -167,6 +167,7 @@ input, select, textarea {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
 		font-weight: 300;
+		color:#0c0c0c
 	}
 
 		h1 strong {
@@ -176,6 +177,7 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
+		color:#0c0c0c
 	}
 
 	h3 {
@@ -202,6 +204,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		text-align: justify
 	}
 
 	header {
@@ -214,7 +217,10 @@ input, select, textarea {
 		}
 
 	footer {
-		margin: 3em 0 0 0;
+		width: 100%;
+		height: 30px;
+		background-color:#666;
+		color: white;
 	}
 
 		footer > p {
@@ -1208,7 +1214,7 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -25px;
+					margin-top: -20px;
 					margin-left: -25px;
 				}
 
@@ -1804,7 +1810,7 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					background-color: #d4d0d0;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 					color: #2E2E2E !important;
@@ -1911,14 +1917,14 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
+		background: #0c0c0c;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
 	}
 
 		.box.style1 {
-			padding: 3em 2em 3.5em 2em;
+			padding: 1em 2em 0.1em 2em;
 		}
 
 			.box.style1 h3 {
@@ -1989,7 +1995,7 @@ input, select, textarea {
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 8em 0 8em 0;
+		padding: 5em 0 7em 0;
 		text-align: center;
 	}
 
@@ -2000,22 +2006,23 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
+			
+			color: #ffffff;
 		}
 
 		.wrapper.style3 {
 			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			color: #000000;
 		}
 
 		.wrapper.style4 {
 			background-color: #303030;
-			color: #999;
-			text-shadow: -1px -1px 0px #181818;
+			color: #ffffff;
+			text-shadow: -1px -1px 0px #ffffff;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-				color: #fff;
+				color: #ffffff;
 			}
 
 			.wrapper.style4 form input[type=text],
@@ -2057,6 +2064,11 @@ input, select, textarea {
 		#nav li {
 			display: inline-block;
 			padding-left: 0;
+		}
+
+		.socl{
+			display: inline-block;
+			padding-left: 35em;
 		}
 
 		#nav a {
@@ -2105,7 +2117,7 @@ input, select, textarea {
 	}
 
 	#top {
-		padding: 10em 0 10em 0;
+		padding: 4em 0 3em 0;
 		text-align: left;
 	}
 
@@ -2121,7 +2133,7 @@ input, select, textarea {
 			}
 
 		#top h1 {
-			margin-top: 0.35em;
+			margin-top: 0.25em;
 		}
 
 		#top p {
@@ -2135,17 +2147,19 @@ input, select, textarea {
 
 	#contact footer {
 		font-size: 0.9em;
+		
 	}
 
 /* Copyright */
 
 	#copyright {
-		color: #666;
+		color: #ffffff;
 		font-size: 1em;
 		line-height: 1em;
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 0;
+		text-align: center;
 	}
 
 		#copyright li {
@@ -2196,7 +2210,7 @@ input, select, textarea {
 		/* Wrappers */
 
 			.wrapper {
-				padding: 5em 0 5em 0;
+				padding: 5em 0 10em 0;
 				text-align: center;
 			}
 
@@ -2233,7 +2247,12 @@ input, select, textarea {
 				#top .image {
 					margin: 0 auto 2em auto;
 				}
-
+			
+			#nav .socl
+			{
+				display: inline-block;
+				padding-left: 15em;
+			}
 	}
 
 /* Small */
@@ -2440,6 +2459,12 @@ input, select, textarea {
 
 					#copyright li:first-child {
 						margin-top: 0;
+					}
+
+					#nav .socl
+					{
+						display: inline-block;
+						padding-left: 5em;
 					}
 
 	}
