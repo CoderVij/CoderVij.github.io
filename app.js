@@ -13,10 +13,11 @@ const submitForm = (event) => {
 
   
   const formData = new FormData(event.target);
+  
 
   //formData.append('private_key', "-----BEGIN PRIVATE KEY-----\n AIzaSyDpCkXnB4KX1xSVL1N233xEH9_D6tmfghw \n-----END PRIVATE KEY-----\n");
 
-
+/*
   //https://email-server-side.onrender.com/submit-form   http://localhost:5000/
   axios.post('https://email-server-side.onrender.com/submit-form', formData, {
     withCredentials: true,
@@ -31,20 +32,19 @@ const submitForm = (event) => {
       alert('Error sending message.');
     });
 
-    
-/*
-    Email.send({
-      Host : "smtp.gmail.com",
-      Username : "marcusmercer12@gmail.com",
-      Password : "marcus_mercer12",
-      To : 'teamindiefusion@gmail.com',
-      From : "marcusmercer12@gmail.com",
-      Subject : "This is the subject",
-      Body : "And this is the body"
-  }).then(
-    message => alert(message)
-  );
     */
+
+ 
+  
+      emailjs.sendForm('service_gywsdqj', 'template_kmmcv21', document.getElementById('contact-form'), 'vMqjvW4xQH8o5GVC_')
+        .then((result) => {
+          alert('Message sent!');
+        }, (error) => {
+          console.log(error);
+          alert('Error sending message.');
+        });
+    
+    
 };
 
 form.addEventListener('submit', submitForm);
