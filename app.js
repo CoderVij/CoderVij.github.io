@@ -39,6 +39,7 @@ const submitForm = (event) => {
       emailjs.sendForm('service_gywsdqj', 'template_kmmcv21', document.getElementById('contact-form'), 'vMqjvW4xQH8o5GVC_')
         .then((result) => {
           alert('Message sent!');
+          event.target.reset();
         }, (error) => {
           console.log(error);
           alert('Error sending message.');
